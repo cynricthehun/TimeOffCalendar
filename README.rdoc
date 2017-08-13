@@ -3,6 +3,8 @@
 Application Information:
 
 ## Ruby version
+ - ruby 2.4.1p111
+ - Rails 5.0.5
 
 ## System dependencies
 
