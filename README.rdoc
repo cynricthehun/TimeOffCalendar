@@ -7,7 +7,10 @@ Application Information:
 ## System dependencies
 
 ## Configuration
+ - Create Secrets.yml under the config folder.
+ - Create Database.yml under the config folder.
 
+## Vagrant Setup & configuration
  - Run the VM configuration with Vagrant. Start by navigating to your project folder and using this command. ``` Vagrant Up ```
  - After the installations have finished. Login to the vm using ``` Vagrant SSH ```. This will establish a connect with your vm via your console.
  - Once the connection is established change directory into the shared project folder by using ``` cd /vagrant ```.
