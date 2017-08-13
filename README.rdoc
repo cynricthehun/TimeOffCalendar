@@ -21,8 +21,10 @@ Application Information:
  - Start the server and bind it to 0.0.0.0 to view the application outside the VM. Run ``` rails s -b 0.0.0.0 ```
 
 ## Database creation
-  - Create and update your database.yml file to include your db username and password.
+  - Switch to your postgres users on the vm. run ``` sudo su - postgres ```
+  - Connect to the postgres service. run ``` psql ```
   - Change default postgres password by loging in and running ``` /password ```
+  - Update your database.yml file to include your db username and password.
   - run ``` rake db:create ```
   - run ``` rake db:migrate ```
   - run ``` rake db:seed ``` for test data.
