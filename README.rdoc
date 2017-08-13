@@ -2,11 +2,11 @@
 
 Application Information:
 
-* Ruby version
+## Ruby version
 
-* System dependencies
+## System dependencies
 
-* Configuration
+## Configuration
 
  - Run the VM configuration with Vagrant. Start by navigating to your project folder and using this command. ``` Vagrant Up ```
  - After the installations have finished. Login to the vm using ``` Vagrant SSH ```. This will establish a connect with your vm via your console.
@@ -15,20 +15,20 @@ Application Information:
  - run ``` bundle install ```.
  - Start the server and bind it to 0.0.0.0 to view the application outside the VM. Run ``` rails s -b 0.0.0.0 ```
 
-* Database creation
+## Database creation
   - Create and update your database.yml file to include your db username and password.
   - Change default postgres password by loging in and running ``` /password ```
   - run ``` rake db:create ```
   - run ``` rake db:migrate ```
   - run ``` rake db:seed ``` for test data.
 
-* Database initialization
+## Database initialization
 
-* How to run the test suite
+## How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Deployment instructions
 
 
 <tt>rake doc:app</tt>.
