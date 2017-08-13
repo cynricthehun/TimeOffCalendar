@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    get 'dashboard/index'
+  end
+
   devise_for :users
+  devise_scope :user do
+    authenticated :user do
+      root to: 'admin/dashboard#index'
+    end
+    unauthenticated :user do
+      root to: 'devise/registrations#new', as: :unauthenticated_root
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
